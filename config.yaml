@@ -1,0 +1,5 @@
+default_level: level_001
+seq_len: 8
+batch_size: 256
+lr: 0.001
+
