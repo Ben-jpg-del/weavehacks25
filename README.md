@@ -12,13 +12,13 @@ A compact research & demo stack for **cooperative decision-making** across three
 
 ## System at a glance
 
-* **Behavior Cloning (IL)** — `env/maps/level_001BC.py`, `env/maps/train_il_agents.py`
-  33-D state → 3-layer MLP → 6 discrete actions. Trains fast on curated demos; loads `models/*_best.pt`.
+* **Behavior Cloning (IL)** — 
+  33-D state → 3-layer MLP → 6 discrete actions. Trains fast on curated demos.
 
-* **LLM Planner (Claude)** — `env/maps/level_001LLM.py`
+* **LLM Planner (Claude)** — 
   Structured JSON state → strict JSON action plan at ~2 Hz; heuristic fallback; exports RL-style traces.
 
-* **Safety-Aware Cooperative RL (A2C)** — `env/maps/level_001RLv4.py`
+* **Safety-Aware Cooperative RL (A2C)** —
   52-D partner-conditioned state (safety logits, hazards, partner features). Safety mask via trajectory sim; joint actor-critic with cooperation penalties; persistent replay & autosave.
 
 ## Real-World Applications (Industry)
@@ -35,4 +35,5 @@ A compact research & demo stack for **cooperative decision-making** across three
 * **BC**: 70–85% success after curated demos.
 * **LLM**: Zero-shot planning at ~2 Hz with robust fallback.
 * **RL**: >90% plate activation reliability; >70% end-to-end success ~1k episodes.
+
 
