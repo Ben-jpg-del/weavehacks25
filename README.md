@@ -10,6 +10,7 @@ A compact research & demo stack for **cooperative decision-making** across three
 * **Human-in-the-loop**: Run human-only, AI-only, or hybrid (you drive one agent, AI drives the other).
 * **Reproducible**: Full checkpointing of models/optimizers/replay + JSON logs + W&B.
 
+
 ## System at a glance
 
 * **Behavior Cloning (IL)** — 
@@ -20,6 +21,11 @@ A compact research & demo stack for **cooperative decision-making** across three
 
 * **Safety-Aware Cooperative RL (A2C)** —
   52-D partner-conditioned state (safety logits, hazards, partner features). Safety mask via trajectory sim; joint actor-critic with cooperation penalties; persistent replay & autosave.
+
+
+https://github.com/user-attachments/assets/526a3184-449d-45e2-b12e-e3476e36eda6
+
+
 
 ## Real-World Applications (Industry)
 
@@ -35,6 +41,7 @@ A compact research & demo stack for **cooperative decision-making** across three
 * **BC**: 70–85% success after curated demos.
 * **LLM**: Zero-shot planning at ~2 Hz with robust fallback.
 * **RL**: >90% plate activation reliability; >70% end-to-end success ~1k episodes.
+
 
 
 
