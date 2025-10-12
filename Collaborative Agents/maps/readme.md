@@ -1,1 +1,1 @@
-&& Level Maps for keystroke mapping and training &&
+# Level Maps for keystroke mapping and training 
