@@ -2,7 +2,7 @@
 
 A compact research & demo stack for **cooperative decision-making** across three paradigms: **Safety-Aware RL**, **Imitation Learning (BC)**, and **LLM Planning**. Built to show rapid iteration at a hackathon: record demos → clone behavior → add safe RL → compare against an LLM planner — all with persistent checkpoints and W&B tracking.
 
-## Why this matters (hackathon-ready)
+## Why this matters
 
 * **True cooperation**: Two agents (“Fire” & “Water”) must coordinate plates/switches to unlock exits.
 * **Safety-first control**: A 100-step physics sim masks unsafe actions before they’re sampled.
@@ -41,6 +41,7 @@ https://github.com/user-attachments/assets/526a3184-449d-45e2-b12e-e3476e36eda6
 * **BC**: 70–85% success after curated demos.
 * **LLM**: Zero-shot planning at ~2 Hz with robust fallback.
 * **RL**: >90% plate activation reliability; >70% end-to-end success ~1k episodes.
+
 
 
 
